@@ -1,6 +1,6 @@
 # Task 02: Simple Image Encryption Tool
 
-A command-line image encryption utility that performs pixel-level bitwise XOR manipulation on image channels using the Python `Pillow` library.
+A command-line image encryption utility that performs pixel-level bitwise manipulation on image channels using the Python `Pillow` library.
 
 ## How it Works
 The tool iterates over every pixel in the input image and applies a bitwise XOR (`^`) operation on the Red, Green, and Blue channels using a user-specified integer key (0-255). 
@@ -15,8 +15,6 @@ Running the exact same encryption script with the same key on the encrypted imag
 > **Use PNG for Encrypted Images**: 
 > You must save the encrypted output in a lossless format like **PNG**. If you save the encrypted output as a lossy format (like **JPEG**), the color compression algorithms will alter the scrambled pixel values slightly, making perfect decryption impossible and leaving the decrypted image corrupted.
 
-## Getting Started
-
 ### Prerequisites
 1. Python 3.x installed.
 2. Install the **Pillow** library:
@@ -29,7 +27,6 @@ Execute the script from your terminal:
 ```bash
 python image_encryptor.py
 ```
-
 ### Usage Example
 1. Run the script and choose Option `1`.
 2. Input image path: `my_photo.png`
